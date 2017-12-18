@@ -1,4 +1,5 @@
-  $("#myModal").draggable({
+
+$("#myModal").draggable({
       handle: ".modal-header"
   });
 

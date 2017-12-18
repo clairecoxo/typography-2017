@@ -65,8 +65,8 @@ img.close {
   cursor: pointer; }
 
 .modal.in .modal-dialog {
-  margin-right: 50px;
-  margin-top: 233px; }
+  margin-left: 20px;
+  margin-top: 50px; }
 
 .modal-header {
   border-bottom: none; }
@@ -76,7 +76,7 @@ img.close {
 
 .modal-content {
   margin-top: 50px;
-  margin-right: 50px;
+  margin-left: 50px;
   background-color: #febe32;
   box-shadow: none;
   border: none;
@@ -84,12 +84,23 @@ img.close {
   font-family: 'Courier New';
   font-size: 1.125em; }
 
+.modal-title {
+  font-size: 1em;
+  padding-right: 23px;
+  padding-left: 10px; }
+
 .modal-body {
   font-family: 'Courier New'; }
 
 .modal2-body {
   font-family: 'Courier New';
-  font-size: 1em;
-  padding: 15px; }
+  font-size: .95em;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2px; }
+
+.modal2-content {
+  font-family: 'Courier New';
+  background-color: #fafafa; }
 
 /*# sourceMappingURL=style.css.map */
