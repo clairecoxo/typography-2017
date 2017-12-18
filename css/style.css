@@ -64,14 +64,19 @@ img.close {
   width: 15px;
   cursor: pointer; }
 
+.modal.in .modal-dialog {
+  margin-right: 50px;
+  margin-top: 233px; }
+
 .modal-header {
-  padding: 28px;
   border-bottom: none; }
 
 .modal-backdrop.in {
   opacity: 0; }
 
 .modal-content {
+  margin-top: 50px;
+  margin-right: 50px;
   background-color: #febe32;
   box-shadow: none;
   border: none;
@@ -81,5 +86,10 @@ img.close {
 
 .modal-body {
   font-family: 'Courier New'; }
+
+.modal2-body {
+  font-family: 'Courier New';
+  font-size: 1em;
+  padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */
