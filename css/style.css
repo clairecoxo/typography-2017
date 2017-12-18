@@ -28,9 +28,6 @@ h1 {
   font-weight: 200;
   color: #333;
   font-size: 5em; }
-  @media screen and (min-width: 64em) {
-    h1 {
-      font-size: 2em; } }
 
 h2 {
   font-family: Courier New;
@@ -38,19 +35,13 @@ h2 {
   font-size: 5em; }
 
 #didion-text {
-  width: 85%;
+  padding: 5em;
+  width: 65%;
   margin: auto; }
-  @media screen and (min-width: 64em) {
-    #didion-text {
-      margin: auto;
-      width: 50%; } }
 
 p {
   font-family: adobe caslon pro;
-  font-size: 4em; }
-  @media screen and (min-width: 64em) {
-    p {
-      font-size: 1.125em; } }
+  font-size: 3em; }
 
 footer {
   color: #333; }
@@ -73,8 +64,22 @@ img.close {
   width: 15px;
   cursor: pointer; }
 
-/******************************************
-/* ADDITIONAL STYLES                   
-/*******************************************/
+.modal-header {
+  padding: 28px;
+  border-bottom: none; }
+
+.modal-backdrop.in {
+  opacity: 0; }
+
+.modal-content {
+  background-color: #febe32;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  font-family: 'Courier New';
+  font-size: 1.125em; }
+
+.modal-body {
+  font-family: 'Courier New'; }
 
 /*# sourceMappingURL=style.css.map */

@@ -67,9 +67,6 @@ h1{
     font-weight: 200;
     color: $primary-color;
     font-size: 5em;
-    @include breakpoint(1024) { 
-    font-size: 2em;
-    }
 }
 
 h2{
@@ -79,20 +76,14 @@ h2{
 }
 
 #didion-text{
-    width: 85%;
+    padding:5em;
+    width: 65%;
     margin: auto;
-    @include breakpoint(1024) { 
-    margin: auto;
-    width: 50%;
-    }
 }
 
 p{
     font-family: adobe caslon pro;
-    font-size: 4em;
-    @include breakpoint(1024) { 
-    font-size: 1.125em;
-    }
+    font-size: 3em;
 }
 
 
@@ -123,10 +114,26 @@ img.close {
     cursor: pointer;
 }
 
-/******************************************
-/* ADDITIONAL STYLES                   
-/*******************************************/
+// MODAL DIALOGUE
+.modal-header{
+    padding: 28px;
+    border-bottom: none;
+}
+.modal-backdrop.in{
+    opacity: 0;
+}
 
+.modal-content{
+    background-color: $modale-h1-color;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    font-family: 'Courier New';
+    font-size: 1.125em;
+}
 
+.modal-body{
+  font-family: 'Courier New'; 
+}
 
 
