@@ -11,20 +11,21 @@ Author: Your Name
 
 //RESPONSIVE MEDIA QUERIES
 
-@mixin breakpoint($point) {
-    // assumes 16px = 1em
-    // make more (or less) of these as needed
-  @if $point == 320 {
-    @media screen and (min-width: 20em) { @content; }  
+ @mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (min-width: 70em) { @content ; }
   }
-   @if $point == 600 {
-    @media screen and (min-width: 37.5em) { @content; }  
-  }  
-  @if $point == 1024 {
-    @media screen and (min-width: 64em) { @content; } 
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }
   }
-  
-}  
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }
+
+  }
+} 
 
 
 //FONTS
@@ -76,14 +77,21 @@ h2{
 }
 
 #didion-text{
-    padding:5em;
-    width: 65%;
+    width: 95%;
+    font-size: 2.5em;
+    padding: 3em;
     margin: auto;
+    @include breakpoint(laptop) {
+    font-size: 1.125em;
+    padding:5em;
+    width: 60%;
+    margin: auto;
+    }
 }
 
 p{
     font-family: adobe caslon pro;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 
@@ -138,23 +146,48 @@ img.close {
     font-size: 1.125em;
 }
 .modal-title{
-  font-size: 1em;
-padding-right: 23px;
+    font-size: 1em;
+    padding-right: 23px;
     padding-left: 10px;
 }
 .modal-body{
-  font-family: 'Courier New'; 
+    font-family: 'Courier New'; 
 }
 
 .modal2-body{
-   font-family: 'Courier New'; 
+    font-family: 'Courier New'; 
+    font-size: 1.125em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    @include breakpoint(laptop) {
+    font-family: 'Courier New'; 
     font-size: .95em;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 2px;
+        
+    }
 }
 
 .modal2-content{
     font-family: 'Courier New';
-   background-color: #fafafa; 
+    background-color: #fafafa; 
+}
+
+.modal-container{
+    width:450px; 
+    height: 685px; 
+    margin-left: 360px; 
+    top:90px;  
+}
+.modal2-dialog{
+    margin-left: 360px; 
+    margin-top: 140px;
+    @include breakpoint(laptop) {
+    width:450px; 
+    height: 685px; 
+    margin-left: 900px; 
+    margin-top:100px;
+    }
 }
